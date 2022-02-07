@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1571168136613-46401b03904e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .fixed{
+    position: fixed;
+    border-bottom: 2px solid black;
+    padding:20px;
+    top:0;
+    left: 0;
+    width: 100%;
+} */
+
+h1 {
+  padding-top: 20px;
+  color: brown;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: orange;
+  padding-top: 10px;
+}
+
+.unordered-list {
+  float: right;
+  list-style-type: none;
+  margin-top: 10px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  padding: 15px;
+  width: 100%;
+}
+
+.unordered-list .list {
+  display: inline-block;
+}
+
+.unordered-list .list a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
+}
+
+.unordered-list .list a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* .logo{
+        float: left;
+        width: 100px;
+        height:auto; 
+} */
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title h1 {
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  border: 2px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.6 ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  max-width: inherit;
+  margin: 10px;
+  overflow: auto;
+  text-align: center;
+}
+
+.gallery {
+  margin: 70px;
+  float: left;
+  width: 500px;
+}
+
+.gallery img {
+  width: 100%;
+  /* background-position: center center;
+        background-size: cover;
+        border-radius: 0 50% 0 50%;
+        box-shadow: 2px 2px 30px black; */
+}
+
+.image-description {
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: maroon;
+}
+
+.copyright {
+  text-align: center;
+  color: brown;
+  padding-top: 10px;
+}
+
+@media (max-width: 1100px) {
+  body::before {
+    transform: -50% -50%;
+  }
+  .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -20%);
+  }
+}
+
+/* Footer */
+
+.footer-container {
+  margin: 0px;
+  padding: 10px;
+  background-color: burlywood;
+}
+
+.footer-col .heading4 {
+  font-size: 30px;
+  color: black;
+  text-transform: capitalize;
+  margin: 30px;
+  font-weight: 500;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.footer-col .heading4::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  background-color: firebrick;
+  height: 2px;
+  box-sizing: border-box;
+  width: 150px;
+}
+
+.unordered-list2 .list2:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.unordered-list2 .list2 a {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style-type: none;
+  color: crimson;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.unordered-list2 .list2 a:hover {
+  color: darkgreen;
+  padding-left: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  top: 43%;
+  left: 43%;
+  color: antiquewhite;
+  transition: all 0.5s ease;
+}
+
+.social-links a:hover {
+  color: black;
+  background-color: chocolate;
+}
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+  .button {
+    text-align: center;
+  }
+  header {
+    width: 100%;
+  }
+}
