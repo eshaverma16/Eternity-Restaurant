@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  /* width: 1200px; */
   margin: 100px auto;
 }
 
@@ -93,4 +93,6 @@ body {
   float: right;
   color: orange;
   font-style: italic;
+}
+@media screen and (max-width:600px) { 
 }
