@@ -63,3 +63,26 @@ body {
   margin-top: 8px;
   width: 100%;
 }
+
+@media screen and (max-width:600px) {
+  body{
+    background-repeat: no-repeat;
+  }
+  
+  .contact-form{
+    margin:50px -186px;
+    padding: 30px 40px;
+  }
+
+}
+@media screen and (max-width:1000px) and (min-width:600px){
+  body{
+    background-repeat: no-repeat;
+  }
+  
+  .contact-form{
+    margin:50px -310px;
+    padding: 30px 40px;
+  }
+  
+}
